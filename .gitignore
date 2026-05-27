@@ -1,0 +1,60 @@
+# =====================================================
+# SiteSeed .gitignore
+# =====================================================
+
+# --- Secrets & local config ---
+.env
+
+# --- Private dev log (owner only, never committed) ---
+NOTES.md
+
+# --- Generated preview sites (output, not source) ---
+# The generated_sites/ directory itself is tracked (via .gitkeep),
+# but its contents are not — they're build output, not source code.
+generated_sites/*
+!generated_sites/.gitkeep
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+.env/
+
+# --- Testing & coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# --- Type checkers & linters ---
+.mypy_cache/
+.ruff_cache/
+
+# --- Editors & IDEs ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- OS generated ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Distribution / packaging ---
+*.manifest
+*.spec
